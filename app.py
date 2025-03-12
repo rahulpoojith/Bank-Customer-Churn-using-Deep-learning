@@ -54,6 +54,10 @@ geo_encoded_df = pd.DataFrame(geo_encoded, columns=one_hot_enc_geo.get_feature_n
 # Combine one-hot encoded columns with input data
 input_data = pd.concat([input_data.reset_index(drop=True), geo_encoded_df], axis=1)
 
+input_data = input_data.reindex(columns=scaler.feature_names_in_)
+input_data_scaled = scaler.transform(input_data)
+
+
 # Scale the input data
 input_data_scaled = scaler.transform(input_data)
 
