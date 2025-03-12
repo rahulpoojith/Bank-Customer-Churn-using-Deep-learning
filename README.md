@@ -10,7 +10,6 @@ This project aims to predict customer churn in a bank using deep learning techni
 📦 Bank-Customer-Churn-using-Deep-learning
 ├── 📁 dataset              # Dataset used for training
 ├── 📁 models               # Trained model files
-├── 📁 src                  # Source code for preprocessing and model training
 ├── 📜 app.py               # Deployment script (Flask or Streamlit)
 ├── 📜 model.h5             # Trained deep learning model
 ├── 📜 requirements.txt     # Dependencies required to run the project
